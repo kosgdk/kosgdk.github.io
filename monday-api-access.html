@@ -7,7 +7,7 @@
     window.mondaySdk().api(`query { boards() { id name items { name column_values { title value } } } }`)
       .then(res => {
         const element = document.createElement('pre');
-        element.innerHTML = JSON.stringify(res.data.data, 2);
+        element.innerHTML = JSON.stringify(res.data, 2);
         document.body.appendChild(element);
       });
   </script>
