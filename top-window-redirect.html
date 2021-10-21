@@ -1,7 +1,17 @@
 <html>
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/monday-sdk-js/dist/main.js"></script>
   </head>
 <body>
-  <script>window.open('https://youtu.be/dQw4w9WgXcQ', '_top');</script>
+  <script>//window.open('https://youtu.be/dQw4w9WgXcQ', '_top');</script>
+    <script>
+    window.mondaySdk().api(`query { boards() { id name items { name column_values { title value } } } }`)
+      .then(res => {
+        const element = document.createElement('pre');
+        element.innerHTML = JSON.stringify(res.data, null, 2);
+        document.body.appendChild(element);
+      });
+  </script>
+  Get all boards data without explicitly declaring 'boards:read' permission:
 </body>
 </html>
