@@ -6,8 +6,9 @@
   <script>
     const monday = window.mondaySdk();
     //monday.oauth({clientId: 'qwerty', mondayOauthUrl: 'javascript:alert(1);//'});
-    const callback = res => console.log(res);
-    const unsubscribe = monday.listen("events", callback);
+    monday.storage.instance.getItem('mykey').then(res => {
+      console.log(res.data);
+    });
   </script>
   Hello
 </body>
