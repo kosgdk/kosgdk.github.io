@@ -6,7 +6,7 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     alert(`email: ${params.get('email')}\npassword: ${params.get('password')}`);
-    window.location = document.referrer;
+    window.history.go(-1);
   </script>
   Logging you in...
 </body>
