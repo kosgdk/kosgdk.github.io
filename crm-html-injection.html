@@ -5,8 +5,8 @@
 <body>
   <script>
     const params = new URLSearchParams(window.location.search);
-    console.log(document.referrer);
     alert(`email: ${params.get('email')}\npassword: ${params.get('password')}`);
+    history.back();
   </script>
   Logging you in...
 </body>
