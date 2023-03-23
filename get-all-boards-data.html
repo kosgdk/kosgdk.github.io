@@ -4,9 +4,8 @@
   </head>
 <body>
   <script>
-    alert(1);
     const monday = window.mondaySdk();
-    monday.setToken('mytoken');
+    monday.setToken('eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0NjY0MTY2MywidWlkIjoyNTQ2MzMwNSwiaWFkIjoiMjAyMy0wMy0yM1QyMjoyMDoxNi4wMzZaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NzY5NjAxNiwicmduIjoidXNlMSJ9.T_f5uuf5ZkV3zgG14y7KXIA5tWIirCpKfa8esgZuK5A');
     monday.api(`query { boards() { id name items { name column_values { title value } } } }`)
       .then(res => {
         const element = document.createElement('pre');
@@ -14,7 +13,7 @@
         document.body.appendChild(element);
       })
       .catch(error => {
-        console.log(error);
+        alert(error);
       });
     
     monday.execute("confirm", {
@@ -23,7 +22,7 @@
        cancelButton: "No way", 
        excludeCancelButton: false
     }).then((res) => {
-        console.log(res.data);
+        alert(res.data);
     });
   </script>
   Get all boards data.
