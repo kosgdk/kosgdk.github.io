@@ -4,7 +4,9 @@
   </head>
 <body>
   <script>
+    alert(1);
     const monday = window.mondaySdk();
+    monday.setToken('mytoken');
     monday.api(`query { boards() { id name items { name column_values { title value } } } }`)
       .then(res => {
         const element = document.createElement('pre');
