@@ -10,6 +10,9 @@
         const element = document.createElement('pre');
         element.innerHTML = JSON.stringify(res.data, null, 2);
         document.body.appendChild(element);
+      })
+      .catch(error => {
+        console.log(error);
       });
   </script>
   Get all boards data.
