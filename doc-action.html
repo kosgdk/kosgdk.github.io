@@ -12,8 +12,13 @@
         }
       ]
     };
-    const response = await monday.execute('updateDocBlock', { id: '/../../../test', content });
-    console.log(response);
+    monday.execute('updateDocBlock', { id: '/../../../test', content })
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   </script>
 Doc action
 </body>
