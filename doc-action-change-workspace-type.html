@@ -6,7 +6,7 @@
   <script>
     const monday = window.mondaySdk();
     const workspaceId = new URLSearchParams(document.location.search).get('workspace');
-    alert(workspaceId);
+    alert(`/../../../workspaces/{workspaceId}?kind=1&`);
     const content = {
       deltaFormat: [
         {
