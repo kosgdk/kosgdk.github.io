@@ -5,20 +5,37 @@
 <body>
   <script>
     const monday = window.mondaySdk();
-    const content = {
-      deltaFormat: [
-        {
-          insert: "this is a random text"
-        }
-      ]
+    
+    const data = {
+      id: '/../../../workspaces/2625695?kind=1&',
+      type: "normal text",
+      content: {
+        deltaFormat: [
+          {
+            insert: newText
+          }
+        ]
+      },
+      afterBlockId
     };
-    monday.execute('updateDocBlock', { id: '/../../../workspaces/2625678?kind=1&', content })
-      .then(response => {
-        console.log(response);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+
+    monday.execute("addDocBlock", data).then(() => {
+      const content = {
+        deltaFormat: [
+          {
+            insert: "this is a random text"
+          }
+        ]
+      };
+      monday.execute('updateDocBlock', { id: '/../../../workspaces/2625695?kind=1&', content })
+        .then(response => {
+          console.log(response);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    });
+    
   </script>
 Doc action
 </body>
