@@ -17,10 +17,10 @@
     };
     monday.execute('updateDocBlock', { id: blockId, content })
       .then(response => {
-        alert(response);
+        alert(JSON.stringify(response));
       })
       .catch(error => {
-        alert(error);
+        alert(JSON.stringify(error));
       });
   </script>
 Doc action
