@@ -7,7 +7,6 @@
     const monday = window.mondaySdk();
     const workspaceId = new URLSearchParams(document.location.search).get('workspace');
     const blockId = `/../../../workspaces/${workspaceId}?kind=1&`;
-    alert(blockId);
     const content = {
       deltaFormat: [
         {
@@ -17,10 +16,10 @@
     };
     monday.execute('updateDocBlock', { id: blockId, content })
       .then(response => {
-        alert(JSON.stringify(response));
+        console.log(response);
       })
       .catch(error => {
-        alert(JSON.stringify(error));
+        console.log(error);
       });
   </script>
 Doc action
