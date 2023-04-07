@@ -6,7 +6,6 @@
   <script>
     const monday = window.mondaySdk();
     const workspaceId = new URLSearchParams(document.location.search).get('workspace');
-    alert(`/../../../workspaces/{workspaceId}?kind=1&`);
     const content = {
       deltaFormat: [
         {
@@ -14,7 +13,7 @@
         }
       ]
     };
-    monday.execute('updateDocBlock', { id: `/../../../workspaces/{workspaceId}?kind=1&`, content })
+    monday.execute('updateDocBlock', { id: `/../../../workspaces/${workspaceId}?kind=1&`, content })
       .then(response => {
         console.log(response);
       })
