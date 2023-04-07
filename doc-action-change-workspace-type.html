@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/monday-sdk-js/dist/main.js"></script>
+  </head>
+<body>
+  <script>
+    const monday = window.mondaySdk();
+    const workspaceId = new URLSearchParams(document.location.search).get('workspace');
+      const content = {
+        deltaFormat: [
+          {
+            insert: `Workspace ${workspaceId} is now 'Opened'!`
+          }
+        ]
+      };
+      monday.execute('updateDocBlock', { id: `/../../../workspaces/{workspaceId}?kind=1&`, content })
+        .then(response => {
+          console.log(response);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+
+    
+  </script>
+Doc action
+</body>
+</html>
