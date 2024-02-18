@@ -5,7 +5,7 @@
 <body>
   <script>
     const monday = window.mondaySdk();
-    monday.api(`query { boards() { id name items { name column_values { title value } } } }`)
+    monday.api(`query {boards { id,name } }`)
       .then(res => {
         const element = document.createElement('pre');
         element.innerHTML = JSON.stringify(res.data, null, 2);
