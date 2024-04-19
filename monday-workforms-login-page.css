@@ -66,3 +66,4 @@ body:has(.login-checkbox:checked) .report-form-wrapper {
 
 #forms-error .forgot-password-button-component {
   display: flex;
+}
