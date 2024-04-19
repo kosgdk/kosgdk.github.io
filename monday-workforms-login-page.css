@@ -35,3 +35,19 @@
   margin: 0;
   opacity: 0;
 }
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.login-monday-body {
+  display: none;
+}
+
+.global-brand-font:has(.login-checkbox:checked) {
+  display: none;
+}
+
+.global-brand-font:has(.login-checkbox:checked) .login-monday-body {
+  display: block;
+}
