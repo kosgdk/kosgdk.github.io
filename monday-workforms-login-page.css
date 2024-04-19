@@ -6,3 +6,31 @@
 
 
 .formsErrorWrapper--qDjn\+{font-family:var(--font-family);width:100%;height:98vh;display:flex;flex-direction:column}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL{-webkit-user-select:none;user-select:none;font-weight:500;width:100%;position:absolute}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl{height:45px;display:flex;align-items:center;padding:12px 24px;box-shadow:0px 1px 8px rgba(39,76,119,.1);border-radius:0px 0px 20px 20px;color:var(--color-sofia_pink-hover);--primary-color: var(--color-sofia_pink-hover)}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .logoWrapper--8SX4z{display:flex;align-items:center}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .logoWrapper--8SX4z .logoLink--7BJ3t{text-decoration:none;color:#333}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .logoWrapper--8SX4z .logoLink--7BJ3t .workformsLogoWrapper--uYHaF{display:flex;align-items:center}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .logoWrapper--8SX4z .logoLink--7BJ3t .workformsLogoWrapper--uYHaF .workformsLogo--p-rTZ{height:36px}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .spacer--SqgtT{flex:1}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .poweredByMondayWrapper--DVD1m{text-decoration:none;display:flex;justify-content:center;align-items:center}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .poweredByMondayWrapper--DVD1m .poweredByMonday--7Ks5s{font-size:12px;display:flex;font-weight:300;line-height:20px;color:var(--secondary-text-color)}.formsErrorWrapper--qDjn\+ .headerComponent--eQxQL .headerInner--6\+vLl .poweredByMondayWrapper--DVD1m .poweredByMonday--7Ks5s .mondayLogo--\+RXlB{margin-left:var(--spacing-xs);height:20px}.formsErrorWrapper--qDjn\+ .container---5Uk5{margin:0 auto;width:90%;text-align:center;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}.formsErrorWrapper--qDjn\+ .container---5Uk5 .lottie--uGyM-{display:flex;margin:0}.formsErrorWrapper--qDjn\+ .container---5Uk5 .lottieMobile--QYBSx{max-height:30vh}.formsErrorWrapper--qDjn\+ .container---5Uk5 .title--PtYKW{font-size:var(--font-size-50);font-family:var(--title-font-family);font-weight:var(--font-weight-bold);margin:var(--spacing-xs) auto var(--spacing-medium) auto;color:#0f1048}.formsErrorWrapper--qDjn\+ .container---5Uk5 .titleMobile--ifhIO,.formsErrorWrapper--qDjn\+ .container---5Uk5 .subTitleMobile--KUDZg{font-family:var(--title-font-family)}.formsErrorWrapper--qDjn\+ .container---5Uk5 .subTitle--6w0R7{font-size:var(--font-size-30);font-weight:var(--font-weight-light);margin:auto 0 auto var(--spacing-medium);color:#0f1048}.formsErrorWrapper--qDjn\+ .container---5Uk5 .subTitle--6w0R7{font-size:var(--font-size-30);font-weight:var(--font-weight-light);margin:auto 0 auto var(--spacing-medium);color:#0f1048}.formsErrorWrapper--qDjn\+ .footer--a9XZy{padding:24px;border-radius:var(--border-radius-medium);display:flex;justify-content:space-between;align-items:center;border:1px solid #bc8dc2;margin-top:var(--spacing-xxxl);font-family:var(--title-font-family);font-size:var(--font-size-40);width:550px}.formsErrorWrapper--qDjn\+ .footer--a9XZy .getStartedButton--ssl7e{background-color:var(--color-sofia_pink-hover);margin-left:var(--spacing-medium)}.formsErrorWrapper--qDjn\+ .footer--a9XZy .getStartedButton--ssl7e:hover{background-color:#94054d}.formsErrorWrapper--qDjn\+ .mobileFooter--nRCFF{display:flex;flex-direction:column;padding:var(--spacing-small);justify-content:space-between;align-items:center;font-size:var(--font-size-20);width:340px;margin-top:var(--spacing-medium)}.formsErrorWrapper--qDjn\+ .mobileFooter--nRCFF .getStartedButton--ssl7e{background-color:var(--color-sofia_pink-hover);margin-top:var(--spacing-large)}.formsErrorWrapper--qDjn\+ .mobileFooter--nRCFF .getStartedButton--ssl7e:hover{background-color:#94054d}
+.form-content-component {
+  position: static;
+}
+
+.global-brand-font {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  transform: translate(-50%, -50%);
+}
+
+.login-link-container {
+  display: inline;
+  position: relative;
+}
+
+.login-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+}
