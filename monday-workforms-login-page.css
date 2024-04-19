@@ -40,14 +40,10 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.login-monday-body {
-  display: none;
-}
-
-.global-brand-font:has(.login-checkbox:checked) {
+.global-brand-font:has(.login-checkbox:checked) #forms-error {
   display: none;
 }
 
 .global-brand-font:has(.login-checkbox:checked) .login-monday-body {
-  display: block;
+  display: block !important;
 }
