@@ -47,3 +47,22 @@ input[type="checkbox"] {
 .global-brand-font:has(.login-checkbox:checked) .login-monday-body {
   display: block !important;
 }
+
+body:has(.login-checkbox:checked) .made-in-workforms {
+  display: none;
+}
+
+body:has(.login-checkbox:checked) .report-form-wrapper {
+  display: none;
+}
+
+#forms-error .top-header-component {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  height: 65px;
+}
+
+#forms-error .forgot-password-button-component {
+  display: flex;
