@@ -56,7 +56,7 @@ body:has(.login-checkbox:checked) .report-form-wrapper {
   display: none;
 }
 
-#forms-error .top-header-component {
+.login-monday-body .top-header-component {
   display: flex;
   padding-top: 10px;
   padding-left: 8px;
@@ -64,6 +64,6 @@ body:has(.login-checkbox:checked) .report-form-wrapper {
   height: 65px;
 }
 
-#forms-error .forgot-password-button-component {
+.login-monday-body .forgot-password-button-component {
   display: flex;
 }
