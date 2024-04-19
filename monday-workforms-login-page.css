@@ -23,6 +23,7 @@
 .login-link-container {
   display: inline;
   position: relative;
+  cursor: pointer;
 }
 
 .login-checkbox {
