@@ -67,3 +67,7 @@ body:has(.login-checkbox:checked) .report-form-wrapper {
 .login-monday-body .forgot-password-button-component {
   display: flex;
 }
+
+.submit_button:hover {
+  background: var(--primary-hover-color) !important;
+}
