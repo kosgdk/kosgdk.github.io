@@ -69,5 +69,5 @@ body:has(.login-checkbox:checked) .report-form-wrapper {
 }
 
 .submit_button:hover {
-  background: var(--primary-hover-color) !important;
+  background: #0060b9 !important;
 }
