@@ -1,7 +1,7 @@
 <html>
 <body>
-  <textarea id="test" style="width: 600px; height: 300px;"></textarea>
-  <button id="test-btn">PostMessage</button>
+  <textarea id="textarea" style="width: 600px; height: 300px;"></textarea>
+  <button id="btn">PostMessage</button>
   <script>
     document.getElementById('btn').addEventListener('click', () => {
       window.parent.postMessage(JSON.parse(document.getElementById('textarea').value), '*');
