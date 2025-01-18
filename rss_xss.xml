@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
         <channel>
-                <title>toto<img src="x" onerror="alert(1)" /></title>
-                <description>This is a simplified example of the RSS feed<img src="x" onerror="alert(2)" /></description>
+                <title>toto</title>
+                <description>This is a simplified example of the RSS feed</description>
                 <link>javascript:alert(3)</link>
-                <copyright>2021 fileformat.com All rights reserved<img src="x" onerror="alert(4)" /></copyright>
+                <copyright>2021 fileformat.com All rights reserved</copyright>
                 <lastBuildDate>Wed, 22 Jun 2021 00:01:00 +0000</lastBuildDate>
                 <pubDate>Wed, 22 Jun 2021 16:20:00 +0000</pubDate>
                 <ttl>1800</ttl>
                 <item>
-                        <title>Ex2ample entry<img src="x" onerror="alert(5)" /></title>
-                        <description>Here is some text containing an interesting description.<img src="x" onerror="alert(6)" /></description>
-                        <link>javascript:alert(7)</link>
+                        <title>1</title>
+                        <description>Here is some text containing an interesting description</description>
+                        <link>https://google.com</link>
+                        <guid isPermaLink="false">9bd605d5-1921-8i67-dgft-65g635d3587u</guid>
+                        <pubDate>Wed, 22 Jun 2021 16:20:00 +0000</pubDate>
+                </item>
+                <item>
+                        <title>2</title>
+                        <description>Here is some text containing an interesting description</description>
+                        <link>java
+script:alert(3)</link>
                         <guid isPermaLink="false">9bd605d5-1921-8i67-dgft-65g635d3587u</guid>
                         <pubDate>Wed, 22 Jun 2021 16:20:00 +0000</pubDate>
                 </item>
