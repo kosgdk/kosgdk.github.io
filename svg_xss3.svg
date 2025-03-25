@@ -1,0 +1,6 @@
+<svg>
+<a href="https://google.com">
+  <animate attributeName="href" from="javascript:alert(1)" to="javascript:alert(1)" ></animate>
+  <circle r="50"></circle>
+</a>
+</svg>
