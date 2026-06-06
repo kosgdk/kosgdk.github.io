@@ -1,1 +1,1 @@
-alert(App.api.getOAuthToken());
+<script>alert(1);</script>
